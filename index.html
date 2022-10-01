@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GOOD</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="./dist/main.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./main.css"> -->
+</head>
+
+<body class="bg-primary">
+
+    <!-- Start Nav -->
+    <nav class="navbar bg-dark text-primary fixed-top  site-nav">
+        <div class="container-fluid">
+            <span id="filterbtn" class="d-inline-block d-md-none"><i
+                    class="fas fa-filter"></i></span>
+            <a href="#" class="navbar-brand text-primary text-uppercase">good</a>
+            <span id="cartbtn"><i class="fas fa-shopping-cart"></i></span>
+        </div>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Start Main Content Section -->
+    <main>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+
+                <div class="col-md-2">
+                    <aside id="sitefilter" class="site-filter">
+                        <ul class="list-unstyled  site-filter__list">
+                            <li class="  site-filter__item">
+                                <div class="input-group custom-style">
+                                    <input type="text" id="searchbox"
+                                        class="form-control bg-transparent border-0"
+                                        placeholder="Search category">
+                                    <span class="input-group-text bg-transparent border-0"><i
+                                            class="fas fa-search"></i></span>
+                                </div>
+                            </li>
+                            <li class="  site-filter__item">
+                                <div>
+                                    <h4 class="fs-18">Price range</h4>
+                                    <div class="py-2 d-flex align-items-center gap-3">
+                                        <span>0$</span>
+                                        <input type="range" name="" id="pricerange" class="range"
+                                            min="0" max="300" />
+                                        <span><span id="currval">0</span>$</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="   site-filter__item">
+                                <div>
+                                    <h4 class="fs-18">Categories</h4>
+                                    <ul id="category"
+                                        class="list-unstyled py-2 px-3  site-filter__list site-filter__list--categories">
+                                        <li class="  site-filter__link active">bbqs</li>
+                                        <li class="  site-filter__link">breads</li>
+                                        <li class="  site-filter__link">burgers</li>
+                                        <li class="  site-filter__link">chocolates</li>
+                                        <li class="  site-filter__link">desserts</li>
+                                        <li class="  site-filter__link">drinks</li>
+                                        <li class="  site-filter__link">fried-chicken</li>
+                                        <li class="  site-filter__link">ice-cream</li>
+                                        <li class="  site-filter__link">pizzas</li>
+                                        <li class="  site-filter__link">porks</li>
+                                        <li class="  site-filter__link">sandwiches</li>
+                                        <li class="  site-filter__link">sausages</li>
+                                        <li class="  site-filter__link">steaks</li>
+                                    </ul>
+                                </div>
+
+
+                            </li>
+
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="col-md-10">
+                    <section class="box">
+                        <div class="container">
+
+                            <div class="col-md-3 float-md-end  sort">
+                                <select name="" id="sortfilter" class="form-select  custom-style">
+                                    <option value="" disabled selected>Sort by price</option>
+                                    <option value="0">Sort by price low to high</option>
+                                    <option value="1">Sort by price high to low</option>
+                                </select>
+                            </div>
+
+                            <div id="cardgroup" class="py-3  card-group">
+
+                                <span class="loader-wrapper">
+                                    <span class="loader">
+                                        <span class="circle"></span>
+                                    </span>
+                                </span>
+
+                                <!-- <div class=" custom-style  card-group__card">
+                                    <div class=" p-2">
+                                        <figure>
+                                            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2013/05/One-pan-spaghetti-f2aca14.jpg?resize=960,872?quality=90&resize=556,505"
+                                            class="cart-group__img " alt="">
+                                        </figure>
+                                        <div class="d-flex justify-content-between align-items-center py-3 px-2">
+                                            <div class="">
+                                                <h4 class="fs-16 m-0">Food</h4>
+                                                <span class="fs-12">$<span>84290</span></span>
+                                            </div>
+                                            <button type="button" class="btn rounded-circle btn-outline-dark">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+
+
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- End Main Content Section -->
+
+
+    <!-- <script src="main.js"></script> -->
+    <script src="./dist/main.js"></script>
+</body>
+
+</html>
